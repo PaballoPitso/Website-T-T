@@ -2,7 +2,7 @@
 
 > A real-world web development project created for **Tee & Tee Stationery and Copy Centre**, designed to establish a professional online presence and provide customers with accessible information about the business and its services.
 
-## 📌 Project Overview
+## Project Overview
 
 The Tee & Tee Stationery and Copy Centre Website is a web-based application developed as a practical software development project.
 
@@ -10,7 +10,7 @@ The project focuses on designing and developing a professional, user-friendly we
 
 The website is currently **under active development**, with additional features, improvements, and refinements planned for future releases.
 
-## 🎯 Project Objectives
+## Project Objectives
 
 The main objectives of the project are to:
 
@@ -21,20 +21,20 @@ The main objectives of the project are to:
 * Develop a responsive experience for different screen sizes.
 * Establish a foundation for future digital services and functionality.
 
-## ✨ Current Features
+##  Current Features
 
 The project includes or is being developed with features such as:
 
-* 🏠 Home page
-* ℹ️ About/business information
-* 🛠️ Services section
-* 🖼️ Business imagery and multimedia
-* 📱 Responsive web design
-* 📞 Customer contact information
-* 🌐 Business-focused website structure
-* 🔧 Ongoing UI and functionality improvements
+*  Home page
+*  About/business information
+*  Services section
+*  Business imagery and multimedia
+*  Responsive web design
+*  Customer contact information
+*  Business-focused website structure
+*  Ongoing UI and functionality improvements
 
-## 🛠️ Technologies & Tools
+## Technologies & Tools
 
 ### Frontend
 
@@ -54,7 +54,7 @@ The project includes or is being developed with features such as:
 * Git
 * GitHub
 
-## 🏗️ Development Environment
+## Development Environment
 
 The project is currently developed and tested locally using **XAMPP**.
 
@@ -66,7 +66,7 @@ C:\xampp\htdocs\Tee n Tee
 
 The local development environment allows the website to be tested through an Apache/PHP server and, where applicable, a MySQL database.
 
-## 📸 Website Preview
+## Website Preview
 
 ![Tee & Tee Website HomePage 1](Images/Screenshots/Website_HomePage1.png)
 ![Tee & Tee Website HomePage 2](Images/Screenshots/Website_HomePage2.png)
@@ -75,7 +75,7 @@ The local development environment allows the website to be tested through an Apa
 ![Tee & Tee Website ServicePage 3](Images/Screenshots/Website_Service3.png)
 ![Tee & Tee Website ContactPage ](Images/Screenshots/Website_Contact.png)
 
-## 📂 Project Structure
+##  Project Structure
 
 The project follows a web application structure containing resources such as:
 
@@ -93,7 +93,7 @@ Tee n Tee/
 
 The exact structure may evolve as development continues.
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -130,7 +130,7 @@ http://localhost/Tee%20n%20Tee/
 
 > The local URL may change depending on the project's final folder structure and configuration.
 
-## 🔐 Security
+## Security
 
 Sensitive information should never be committed to this repository.
 
@@ -145,7 +145,7 @@ This includes:
 
 A `.gitignore` file should be maintained as the project develops to prevent sensitive or unnecessary files from being committed.
 
-## 📈 Future Development
+## Future Development
 
 Planned improvements include:
 
@@ -185,13 +185,13 @@ Diploma in Information Technology
 
 This project demonstrates my practical application of information technology and web development skills through the development of a real-world business website.
 
-## 📊 Project Status
+## Project Status
 
-**🚧 In Development**
+**In Development**
 
 The project is actively being developed. The repository represents the current development version and will continue to receive improvements and new functionality.
 
-## 📄 License
+## License
 
 This project is intended primarily as a portfolio and business website project.
 
