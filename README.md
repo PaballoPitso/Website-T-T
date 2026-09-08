@@ -66,6 +66,15 @@ C:\xampp\htdocs\Tee n Tee
 
 The local development environment allows the website to be tested through an Apache/PHP server and, where applicable, a MySQL database.
 
+## 📸 Website Preview
+
+![Tee & Tee Website HomePage 1](Images/Screenshots/Website_HomePage1.png)
+![Tee & Tee Website HomePage 2](Images/Screenshots/Website_HomePage2.png)
+![Tee & Tee Website ServicePage 1](Images/Screenshots/Website_Service1.png)
+![Tee & Tee Website ServicePage 2](Images/Screenshots/Website_Service2.png)
+![Tee & Tee Website ServicePage 3](Images/Screenshots/Website_Service3.png)
+![Tee & Tee Website ContactPage ](Images/Screenshots/Website_Contact.png)
+
 ## 📂 Project Structure
 
 The project follows a web application structure containing resources such as:
