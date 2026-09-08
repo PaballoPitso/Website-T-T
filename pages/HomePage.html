@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tee&Tee</title>
+    <link rel="stylesheet" href="./HomePage_Style.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu_open" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+</head>
+<body>
+    <div class="container">
+        <nav >
+            <div class="left">
+                <div class="logo">
+                    <a href="./HomePage.html">
+                        <img src="/Images/Tee&Tee.jpg" alt="Tee & Tee Logo">
+                    </a>
+                </div>
+               
+            </div>
+
+           
+            <div class="menu-icon" id="mobile-menu">&#9776;</div>
+            <ul class="middle-M" id="middle">
+                <li><a href="./Services.html">Services</a></li>
+                <li><a href="./Contacts.html">Contact Us</a></li>
+                <li><a href="./About.html">About Us</a></li>
+            </ul>
+           
+           
+        </nav>
+
+        <section class="home">
+            <div class="home-content">
+                <div class="welcome-video">
+                    <video autoplay muted loop playsinline id="bg-video">
+                        <source src="/Images/welclip.mp4" type="video/mp4">
+                    </video>
+                
+                
+                    
+               </div>
+               <div class="socials">
+                    <a href="https://www.facebook.com/Tee & Tee Stationers and Copy Centre"><i id="social-icon" class="uil uil-facebook"></i></a>
+                    <a href="https://tel:+27744474203"><i id="social-icon" class="uil uil-phone"></i></a> 
+                    <a href="https://wa.me/0744474203"><i id="social-icon" class="uil uil-whatsapp"></i></a>
+                    </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <ul class="footer-links">
+                <li><a href="./HomePage.html">Home</a></li>
+                <li><a href="./Services.html">Services</a></li>
+                <li><a href="./Contacts.html">Contact Us</a></li>
+                <li><a href="./About.html">About Us</a></li>
+            </ul>
+            <span class="copyright">
+                    Tee & Tee Stationer and Copy Centre <br>
+                    688 Hall Street,Masilo,Theunissen <br>
+                    Phone : +27 74 447 4203 <br>
+                    <span id="copyright-text">© 2025 Tee & Tee. All rights reserved. Unauthorized use prohibited without prior written permission.</span>
+                </span>
+        </footer>
+    </div>
+
+    <script>
+        //Icon button for mobile view
+        const menuToggle = document.getElementById('mobile-menu');
+        const middleM = document.getElementById('middle');
+
+    menuToggle.addEventListener('click', () => {
+        middleM.classList.toggle('active');
+    })
+
+    window.addEventListener("scroll", function(){
+        let elements = document.querySelectorAll(".footer");
+
+        elements.forEach(function(el){
+            let position = el.getBoundingClientRect().top;
+            let screenHeight = window.innerHeight;
+
+            if(position < screenHeight - 100){
+                el.classList.add("active");
+            }
+        });
+    });
+    </script>
+ 
+</body>
+</html>

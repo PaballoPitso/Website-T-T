@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link rel="stylesheet" href="Services_Style.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu_open" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+<body>
+    <div class="container">
+        <nav >
+            <div class="left">
+                <div class="logo">
+                    <a href="./HomePage.html">
+                        <img src="/Images/Tee&Tee.jpg" alt="Tee & Tee Logo">
+                    </a>
+                </div>
+              
+            </div>
+
+        
+            <div class="menu-icon" id="mobile-menu">&#9776;</div>
+            <ul class="middle-M" id="middle">
+                <li><a href="./Services.html">Services</a></li>
+                <li><a href="./Contacts.html">Contact Us</a></li>
+                <li><a href="./About.html">About Us</a></li>
+            </ul>
+          
+           
+        </nav>
+
+        <main>
+           
+            <section class="Internet">
+                <div class="title">
+                    <h1>Our Services</h1>
+                    <p>Explore the wide range of services we offer to our customers.</p>
+                 
+            </div>
+            <a href="./CIPCform.html"> <div class="servicesCIPC">
+                
+                <h4 ><i> click to access the form</i></h4>
+                    <h2>Company Services</h2>
+                    <ul>
+                        <h3><strong>CIPC</strong></h3>
+                        <ul>
+                            <li>Company Registrations</li>
+                            <li>Cooperative Registration</li>
+                            <li>Non-profit Registration</li>
+                            <li>Changes to CO/COOP/NPC</li>
+                            <li>Company Annual Return</li>
+                        </ul>
+                      
+                </div>
+            </a>
+           
+
+            <div class="services-container">
+                
+                <a href="All-Serv.html#printer" class="service-card">
+
+                    
+                    <img src="/Images/service1.png">
+                    <div class="service-info">
+                        <h3>Printer</h3>
+                        <p>Copies   Print-Out   Scanning     Photo Enlargement</p>
+                    </div>
+                </a>
+            
+                <a href="All-Serv.html#designing" class="service-card">
+                    <img src="/images/service2.png">
+                    <div class="service-info">
+                        <h3>Designing</h3>
+                        <p>Posters   Logo    Web Design    Android APK</p>
+                    </div>
+                </a>
+
+                <a href="All-Serv.html#technician" class="service-card">
+                    <img src="/images/service2.png">
+                    <div class="service-info">
+                        <h3>Technician</h3>
+                        <p>Hardware repairs     Software Installation</p>
+                    </div>
+                </a>
+            
+                <a href="All-Serv.html#internet" class="service-card">
+                    <img src="/images/service3.png">
+                    <div class="service-info">
+                        <h3>Internet Access</h3>
+                        <p>Internet Access    router setup    Email</p>
+                    </div>
+                </a>
+            
+                <a href="All-Serv.html#laminating" class="service-card">
+                    <img src="/images/service4.png">
+                    <div class="service-info">
+                        <h3>Laminating</h3>
+                        <p>VIP Access Cards     Business Cards    Photos</p>
+                    </div>
+                </a>
+
+                <a href="All-Serv.html#typing" class="service-card">
+                    <img src="/images/service5.png">
+                    <div class="service-info">
+                        <h3>Typing</h3>
+                        <p>Edit PDF    Edit & Typing Document     CV</p>
+                    </div>
+                </a>
+
+                
+            </div>
+
+               
+                
+                <div class="services">
+                      <h3><strong>SARS</strong></h3>
+                        <ul>
+                            <li>E-Filing Registration</li>
+                            <li>Return Filing</li>
+                            <li>Finances Complications</li>
+                            <li>Tax Clearance Pin Confirm</li>
+                        </ul>
+                        <h3><strong>B-BBEE</strong></h3>
+                        <ul>
+                            <li>Affidavit Filing</li>
+                        </ul>
+                        <h3><strong>CSD</strong></h3>
+                        <ul>
+                            <li>Registration Report</li>
+                        </ul>
+                        <h3><strong>Company Profile</strong></h3>
+                        <ul>
+                            <li>Company Profile Compile</li>
+                        </ul>
+                        <h3><strong>COIDA</strong></h3>
+                        <ul>
+                            <li>COIDA Registrations & Letter Of G/S</li>
+                        </ul>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+        <ul class="footer-links">
+            <li><a href="./HomePage.html">Home</a></li>
+            <li><a href="./Services.html">Services</a></li>
+            <li><a href="./Contacts.html">Contact Us</a></li>
+            <li><a href="./About.html">About Us</a></li>
+        </ul>
+        <span class="copyright">
+                
+                <span id="copyright-text">© 2025 Tee & Tee. All rights reserved. Unauthorized use prohibited without prior written permission.</span>
+            </span>
+    </footer>
+    </div>
+    
+
+    <script>
+      //Icon button for mobile view
+      const menuToggle = document.getElementById('mobile-menu');
+      const middleM = document.getElementById('middle');
+
+  menuToggle.addEventListener('click', () => {
+      middleM.classList.toggle('active');
+  })
+
+
+    window.addEventListener("scroll", function(){
+        let elements = document.querySelectorAll(".footer");
+
+        elements.forEach(function(el){
+            let position = el.getBoundingClientRect().top;
+            let screenHeight = window.innerHeight;
+
+            if(position < screenHeight - 100){
+                el.classList.add("active");
+            }
+        });
+    });
+
+
+  
+        window.addEventListener("scroll", function(){
+            let elements = document.querySelectorAll(".services-container");
+
+            elements.forEach(function(el){
+                let position = el.getBoundingClientRect().top;
+                let screenHeight = window.innerHeight;
+
+                if(position < screenHeight - 100){
+                    el.classList.add("active");
+                }
+            });
+        });
+   
+
+        window.addEventListener("scroll", function(){
+           let elements = document.querySelectorAll(".servicesCIPC li");
+           
+           elements.forEach(function(el){
+                let windowHeight = window. innerHeight;
+                let elementTop = el.getBoundingClientRect().top;
+
+                if(elementTop < windowHeight - 100){
+                    el.classList.add("active");
+                }
+           });
+        });
+
+        window.addEventListener("scroll", function(){
+            let elements = document.querySelectorAll(".services-container p");
+            
+            elements.forEach(function(el){
+                 let windowHeight = window. innerHeight;
+                 let elementTop = el.getBoundingClientRect().top;
+ 
+                 if(elementTop < windowHeight - 100){
+                     el.classList.add("active");
+                 }
+            });
+         });
+    
+
+     window.addEventListener("scroll", function(){
+        let elements = document.querySelectorAll(".services");
+        
+        elements.forEach(function(el){
+             let windowHeight = window. innerHeight;
+             let elementTop = el.getBoundingClientRect().top;
+
+             if(elementTop < windowHeight - 100){
+                 el.classList.add("active");
+             }
+        });
+     });
+</script>
+</body>
+</html>

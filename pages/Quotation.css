@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: 'poppins', "Work Sans";
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+.links{
+    text-decoration: none;
+    color: white;
+}
+.container{
+    background-color: #ffc06df1;
+    height: 170vh;
+    width: 100vw;
+    background: linear-gradient( #ffc06df1 ,  #ffc06df1 ),url(/Images/Tee&Tee.jpg)
+    no-repeat center center/cover;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 8vh;
+    width: 100%;
+   top: 0;
+   box-shadow: 0px 2px 4px black;
+    padding: 0;
+    background-color: #FFFFFF;
+}
+a{
+    color: black;
+}
+
+.btn {
+    border-radius: 2.5rem;
+    padding: .5rem 1rem;
+    outline: .3rem white solid;
+    outline-offset: -.2rem;
+    border: none;
+    width: fit-content;
+    
+}
+
+
+#sec-btn {
+    background-color: #f7aa46;
+    color: #ffffff;
+    cursor: pointer;
+
+}
+.left{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    height: inherit;
+    padding-left: .5rem;
+}
+
+.logo img{
+    height: 2.2rem;
+    aspect-ratio:inherit;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+main{
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 20px ;
+    margin-top: 60px;
+    height: calc(100vh - 60px);
+    background: #f4f4f4;
+}
+li{
+    display: block;
+    margin-bottom: 10px;
+}
+h3{
+    color: red;
+}
+.types{
+    display: block;
+    margin-bottom: 10px;
+}
+.address{
+    display: block;
+    margin-bottom: 10px;
+}
+.contacts{
+    display: block;
+    margin-bottom: 10px;
+}
+p {
+    color: red;
+ display: inline;
+}
+label,
+input,
+select{
+    margin-bottom: 10px;
+}
+textarea{
+    margin-bottom: 30px;
+}
+button{
+    border-radius: 2.5rem;
+    padding: .5rem 1rem;
+    outline: .3rem white solid;
+    outline-offset: -.2rem;
+    border: none;
+    width: fit-content;
+}
+button:hover{
+    font-weight: 500;
+    border-radius: 1rem;
+    background-color:#f7aa46;
+    transform: scale(1.2);
+}
+input,
+select{
+    border: 50px #f7aa46;
+    border-radius: 15px;
+    padding: 5px;
+    outline: none;
+
+}
+textarea{
+    width: 100%;
+    transition: 0.3s ease;
+    border: 50px #f7aa46;
+    border-radius: 15px;
+    padding: 5px;
+    outline: none;
+
+    resize: none;
+    overflow-y: auto;
+    height: 120px;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    border: 2px solid #f7aa46;
+    box-shadow: 0 0 5px rgba(247, 170, 70, 0.5);
+}
+.btnsub{
+    background-color: rgb(100, 151, 100);
+    color: #f4f4f4;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+.upl-cont{
+    border: 2px #f7aa46;
+    border-radius: 15px;
+    padding: 10px;
+    display: inline-block;
+}
+
+
+.upload-label{
+    display: inline-block;
+    padding: 5px 5px;
+    background-color: #f7aa46;
+    color: #f4f4f4;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.file-info{
+    margin-top: 10px;
+    font-size: 16px  ;
+}
+.tick{
+    color: green;
+    font-size: 18px;
+    margin-left: 5px;
+    display: none;
+}
+.error{
+    color: red;
+    font-size: 16px;
+    display: none;
+}
+.menu-icon{
+    font-size: 24px;
+    color: black;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+.popup{
+    width: 400px;
+    height: 200px;
+    background:fixed#fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50% ,-50%)scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50% ,-50%)scale(1);
+}
+.popup img{
+    width: 100px;
+    margin: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.popup h2 {
+    margin: 35px;
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.popup p{
+    margin: 10px;
+    color: #333;
+}
+
+.popup button{  
+    width: 70%;
+    margin-top: 5px;
+    padding: 10px 0 ;
+    background: rgb(100, 151, 100);
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 1rem;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+/*footer*/
+.footer{
+    opacity: 0;
+    transform: translateY(80px);
+    transition: all 1s cubic-bezier(.25, .8, .25 , 1);
+
+
+    width: 100%;
+    background-color: #555;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.footer.active{
+    opacity: 1;
+    transform: translateY(0);
+}
+.footer-links{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+   
+}
+.footer-links li a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    transition: color 0.5s ease;
+}
+.footer-links li a:hover{
+    color: #f7aa46;
+}
+.footer span{
+    display: block;
+    font-size: 12px;
+    margin-top: 5px;
+}
+/*mobile View*/
+@media (max-width: 768px){
+    
+    body {
+        height: auto;
+    }
+
+    .container {
+        height: auto;
+        width: 100%;
+        padding: 10px;
+    }
+
+    nav {
+        height: 60px;
+        padding: 0 10px;
+    }
+
+    .left {
+        gap: .5rem;
+    }
+
+    .logo img {
+        height: 1.8rem;
+    }
+
+    main {
+        padding: 15px;
+        margin-top: 60px;
+        height: auto;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    li {
+        font-size: 14px;
+    }
+
+    button,
+    .btn {
+        padding: .4rem .8rem;
+        font-size: 14px;
+    }
+
+    button:hover {
+        transform: none; /* remove zoom effect on mobile */
+    }
+
+    input {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .upl-cont {
+        width: 100%;
+    }
+
+    .upload-label {
+        font-size: 14px;
+    }
+
+    /* Popup smaller on mobile */
+    .popup {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .popup h2 {
+        font-size: 22px;
+        margin: 15px 0;
+    }
+
+    .popup p {
+        font-size: 14px;
+    }
+
+    .popup button {
+        font-size: 14px;
+        padding: 8px 0;
+    }
+    /*footer*/
+.footer{
+    width: 100%;
+    background-color: #555;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.footer-links{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+   
+}
+.footer-links li a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    transition: color 0.5s ease;
+}
+.footer-links li a:hover{
+    color: #f7aa46;
+}
+.footer span{
+    display: block;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+    /* Show menu icon on mobile */
+    .menu-icon {
+        display: block;
+    }
+    body {
+        font-size: 13px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    li {
+        font-size: 13px;
+    }
+
+    a {
+        font-size: 13px;
+    }
+
+    .links {
+        font-size: 13px;
+    }
+
+    .btn,
+    button {
+        font-size: 12px;
+    }
+
+    input {
+        font-size: 12px;
+    }
+
+    .upload-label {
+        font-size: 12px;
+    }
+
+    .file-info {
+        font-size: 12px;
+    }
+
+    .popup h2 {
+        font-size: 18px;
+    }
+
+    .popup p {
+        font-size: 13px;
+    }
+
+    .menu-icon {
+        font-size: 20px;
+    }
+    .footer{
+        
+        padding: 10px 0;
+        font-size: 12px;
+        gap: 5px;
+    }
+    .footer-links{
+        flex-direction: column;
+        gap: 6px;
+       
+    }
+    .footer-links li a{
+        
+        font-size: 12px;
+        
+    }
+    .footer span{
+      
+        font-size: 10px;
+       
+    }
+    /*nav*/
+    .logo img{
+        height: 1.5rem;
+        
+        border-radius: 2rem;
+        
+    }
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./All-Serv.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu_open" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <title>Internet Cafe' Services</title>
+</head>
+<body>
+    <div class="container">
+        <nav >
+            <div class="left">
+                <div class="logo">
+                    <a href="./HomePage.html">
+                        <img src="/Images/Tee&Tee.jpg" alt="Tee & Tee Logo">
+                    </a>
+                </div>
+              
+            </div>
+
+        
+            
+           
+        </nav>
+        <main>
+        
+            <a href="Services.html" class="Back-btn">
+                Back to Services
+            </a>
+
+            <div id="printer" class="service-section" >
+                
+                <img src="/Images/service1.png" alt="Printer Image">
+                <div class="service-text">
+                    <h2>Printer</h2>
+                    <h4>COPIES (B/W)</h4>
+                    <p>                        Single-Sided			        R2.00
+                        Smart Card/Licence	                R3.00
+                        Double-Sided	            		R3.00
+                        A3 	Single-Sided	            	R5.00
+                        A3 Double-Sided	                R6.00
+                        </p>
+                    <h4>COPIES (Colour)</h4>
+                    <p>                        Single-Sided		        	R7.00
+                        Double-Sided			        R9.00
+                        A3 Single-Sided		                R14.00
+                        A3 Double-Sided		        R18.00
+                        </p>
+                    <h4>PHOTO ENLARGEMENT (Colour) </h4>
+                    <p>                        A4	                                   	R12.00
+                        A3	                             	        R24.00
+                    </p>
+                    <h4>PRINT-OUT </h4>
+                    <p>                     B/W	                                         R3.00
+                (Colour)			         		 R8.00
+                    </p>
+                    <h4>SCANNING</h4>
+                    <p>                Per Page				                 R3.00</p>
+                </div>
+                
+            </div>
+
+            <div id="designing" class="service-section">
+                <img src="/Images/service1.png" alt="Printer Image">
+                <div class="service-text">
+                    <h2>Designing</h2>
+                    <h4>POSTER</h4>
+                    <p>                         A4                                              R55.00</p>
+                    <p>                         A3                                              R80.00</p>
+                    <h4>LOGO</h4>
+                    <p>                 Basic Logo Design                                       R100.00</p>
+                    <p>                 Logo Design Full Package                                </p>
+                    <h4>BUSINESS CARDS</h4>
+                    <p>                 12 Items                                              R58.00</p>
+                    <h4>UNACCREDITED CERTIFICATE</h4>
+                    <p>                         A4                                              R58.00</p>
+                    <h4>ACCESS CARDS</h4>
+                    <p>                  4 Items                                              R58.00</p>
+                    <h4>WEBSITE</h4>
+                    <p>                         Basic Starter                               Quotation</p>
+                    <p>                 Standard Business                               Quotation</p>
+                    <p>  Advanced Business Websites                               Quotation</p>
+                    <p>     E-Commerce(Online Store)                               Quotation</p>
+                    <p>                         Includes Monthly Maintenance</p>
+                    <a href="Quotation.html" class="quote-btn">
+                        Quote
+                    </a>
+                    
+                </div>
+            </div>
+
+            <div id="technician" class="service-section">
+                <img src="/Images/service1.png" alt="Printer Image">
+                <div class="service-text">
+                    <h2>Technician</h2>
+                    <p></p> 
+                </div>
+            </div>
+
+            <div id="internet" class="service-section">
+                <img src="/Images/service1.png" alt="Printer Image">
+                <div class="service-text">
+                    <h2>Internet</h2>
+                    <p>Copies Print outs</p> 
+                </div>
+            </div>
+
+            <div id="laminating" class="service-section">
+                <img src="/Images/service1.png" alt="Printer Image">
+                <div class="service-text">
+                    <h2>Laminating</h2>
+                    <p>Copies Print outs</p> 
+                </div>
+            </div>
+
+            <div id="typing" class="service-section">
+                <img src="/Images/service1.png" alt="Printer Image">
+                <div class="service-text">
+                    <h2>Typing</h2>
+                    <p>Copies Print outs</p> 
+                </div>
+            </div>
+        </main>
+
+      <footer class="footer">
+            <ul class="footer-links">
+                <li><a href="./HomePage.html">Home</a></li>
+                <li><a href="./Services.html">Services</a></li>
+                <li><a href="./Contacts.html">Contact Us</a></li>
+                <li><a href="./About.html">About Us</a></li>
+            </ul>
+            <span class="copyright">
+                    
+                    <span id="copyright-text">© 2025 Tee & Tee. All rights reserved. Unauthorized use prohibited without prior written permission.</span>
+                </span>
+        </footer>  
+    </div>
+   
+    <script>
+        window.addEventListener("scroll", function(){
+            let elements = document.querySelectorAll(".footer");
+
+            elements.forEach(function(el){
+                let position = el.getBoundingClientRect().top;
+                let screenHeight = window.innerHeight;
+
+                if(position < screenHeight - 100){
+                    el.classList.add("active");
+                }
+            });
+        });
+    </script>
+</body>
+</html>

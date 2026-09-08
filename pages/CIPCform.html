@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Co-Operative Registration Form</title>
+    <link rel="stylesheet" href="CIPCform_Style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu_open" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="left">
+                <div class="logo">
+                    <a href="./HomePage.html">
+                        <img src="/Images/Tee&Tee.jpg" alt="Tee & Tee Logo">
+                    </a>
+                </div>
+            </div>
+         
+          
+        </nav>
+
+        <main>
+           <section class="CIPC">
+            <form action="submit_form.php" method="POST"  id="myform" enctype="multipart/form-data">
+                     
+     <div class="form">
+                    
+                        <h1>Company/Co-operative Registration form</h1>
+                    <h3><i>This information will be used as official contacts for business/organisations and will appear on registration Documents</i></h3>
+                    <h4>Proposed name/s</h4>
+                    <ul>
+                        <li>Name of the Co-operative 1:<p>*</p><input type="text" id="itemInput" name="name1"  required></li>
+                        <li>Name of the Co-operative 2:<p>*</p><input type="text" id="itemInput" name="name2" required></li>
+                        <li>Name of the Co-operative 3:<p>*</p><input type="text" id="itemInput"  name="name3" required></li>
+                        <li>Name of the Co-operative 4: <p> </p> <input type="text" id="itemInput"  name="name4"></li>
+                    </ul>
+            
+                    
+
+                   <div class="Entities">
+                        <h4>Type of Entities<p>*</p></h4>
+                    <label class="types">
+                        <input type="radio" name="choice" value="Private Company(Pty)Ltd" required>  Private Company(Pty)Ltd
+                    </label>
+                    <label class="types">
+                        <input type="radio" name="choice" value="Public Company (Ltd)" required>  Public Company(Ltd)
+                    </label>
+                    <label class="types">
+                        <input type="radio" name="choice" value="Cooperative" required>  Cooperative
+                    </label>
+                </div>
+                    
+             
+                    
+                <h4>Physical Address<p>*</p></h4>
+                <label class="address">Street Address: <input type="text" id="physical_street" name="physical_street" required></label>
+                <label class="address">Suburb: <input type="text" id="physical_suburb" name=" physical_suburb" required></label>
+                <label class="address">City: <input type="text" id="physical_city" name="physical_city" required></label>
+                <label class="address">Postal Code: <input type="number" id="physical_postal_code" name="physical_postal_code" required></label>
+
+                <label>
+                    <input type="checkbox" id="sameAddress" onclick="copyAddress()"> Same as physical address
+                </label>
+
+                <h4>Postal Address<p>*</p></h4>
+                <label class="address">Street Address: <input type="text" id="postal_street" name="postal_street" required></label>
+                <label class="address">Suburb: <input type="text" id="postal_suburb" name="postal_suburb" required></label>
+                <label class="address">City: <input type="text" id="postal_city" name="postal_city" required></label>
+                <label class="address">Postal Code: <input type="number" id="postal_postal_code" name="postal_postal_code" required></label>
+
+              
+             
+                    <label class="contacts">
+                        Telephone:<input type="number" id="telephone" name="telephone" placeholder="Telephone">
+                    </label>
+                    <label class="contacts">
+                        Cellphone:<p>*</p><input type="number"  id="Cellphone" name="cellphone" placeholder="Cellphone" required>
+                    </label>
+                    <label class="contacts">
+                        Fax Number:<input type="number" id="Fax" name="fax" placeholder="Fax No.">
+                    </label>
+                    <label class="contacts" >
+                       Email:<p>*</p><input type="email" id="Email" name="email" placeholder="Email" name="email" required>
+                    </label>
+             
+                    
+
+                    
+
+                    <div class="formContainer">
+                        <div id="directorList"></div> <!-- Director list container -->
+                    </div>
+
+                    <button type="button" id="addButton" class="btnclear" >Add Director<p>*</p></button>
+
+                </div>         
+                    <button type="submit" id="submitButton" class="btnsub" >Submit</button>
+                            
+                    <button onclick="clearForm()">Clear</button>
+        
+                    <div class="popup" id="popup">
+                        <img src="/Images/tick.png" id="popupIcon">
+                        <h2 id="popupTitle">Title</h2>
+                        <p id="popupMessage">Message</p>
+                        <button type="button" onclick="closePopup()">OK</button>
+                    </div>
+                </div>
+   
+              
+
+                    </form>
+            </section>
+        </main>
+   
+    <script>
+                let directorCount = 0; // Counter to keep track of director numbers
+
+                function copyAddress() {
+                    let checkbox = document.getElementById("sameAddress");
+
+                    let physicalStreet = document.getElementById("physical_street").value;
+                    let physicalSuburb = document.getElementById("physical_suburb").value;
+                    let physicalCity = document.getElementById("physical_city").value;
+                    let physicalPostalCode = document.getElementById("physical_postal_code").value;
+
+                    let postalStreet = document.getElementById("postal_street");
+                    let postalSuburb = document.getElementById("postal_suburb");
+                    let postalCity = document.getElementById("postal_city");
+                    let postalPostalCode = document.getElementById("postal_postal_code");
+
+                    if (checkbox.checked) {
+                        postalStreet.value = physicalStreet;
+                        postalSuburb.value = physicalSuburb;
+                        postalCity.value = physicalCity;
+                        postalPostalCode.value = physicalPostalCode;
+
+                        postalStreet.disabled = true;
+                        postalSuburb.disabled = true;
+                        postalCity.disabled = true;
+                        postalPostalCode.disabled = true;
+                    } else {
+                        postalStreet.value = "";
+                        postalSuburb.value = "";
+                        postalCity.value = "";
+                        postalPostalCode.value = "";
+
+                        postalStreet.disabled = false;
+                        postalSuburb.disabled = false;
+                        postalCity.disabled = false;
+                        postalPostalCode.disabled = false;
+                    }
+                }
+
+                
+                
+                document.getElementById('addButton').addEventListener('click', function() {
+                    let directorList = document.getElementById('directorList');
+                
+                    let index = document.querySelectorAll('.directors').length;
+                    let directorDiv = document.createElement('div');
+                    directorDiv.classList.add('directors');
+                
+                    directorDiv.innerHTML = `
+                        <h4>Director ${index + 1}</h4>
+                        <label>Name: <input type="text" name="directors[${index}][name]" required></label></br></br>
+                        <label>Surname: <input type="text" name="directors[${index}][surname]" required></label></br></br>
+                        <label>ID No.: <input type="number" name="directors[${index}][id_number]" required></label></br></br>
+                        <label>Street Address: <input type="text" name="directors[${index}][street_address]" required></label></br></br>
+                        <label>Suburb: <input type="text" name="directors[${index}][suburb]" required></label></br></br>
+                        <label>City: <input type="text" name="directors[${index}][city]" required></label></br></br>
+                        <label>Postal Code: <input type="number" name="directors[${index}][postal_code]" required></label></br></br>
+                        <label>Email: <input type="email" name="directors[${index}][email]" required></label></br></br>
+                        <label>Cellphone: <input type="number" name="directors[${index}][cellphone]" required></label></br></br>
+                        <label><b>Click! Upload Scanned ID/Passport</b>
+                            <input type="file" name="director_files[${index}]" accept=".jpg, .jpeg, .png, .pdf" onchange="previewFile(this)">
+                            <span class="uploadTick" style="display: none; color: green;">✔</span>
+                            <span class="uploadError" style="display: none; color: red;"><b>X</b></span>
+                        </label></br></br>
+                        <button class="remove-btn" onclick="removeEntry(this)">Remove Director</button>
+                    `;
+                
+                    directorList.appendChild(directorDiv);
+                });
+                
+                
+                // Function to remove director
+                function removeEntry(button) {
+                    let directorDiv = button.parentElement;
+                    directorDiv.remove();
+                   
+                
+                    // Update the remaining director numbers to ensure they stay in descending order
+                    let directors = document.querySelectorAll('.directors h4');
+                    directors.forEach((h4, index) => {
+                        h4.textContent = `Director ${index + 1}`; // Recalculate and set numbers in descending order
+                    });
+
+                    
+                }
+
+     
+
+            document.addEventListener("DOMContentLoaded", function() {
+                const form = document.querySelector(".CIPC");
+                const openLinks = document.querySelectorAll("a[href='./Services.html'], a[href='./Contacts.html'], a[href='./About.html']");
+
+                openLinks.forEach(link => {
+                    link.addEventListener("click", function(event) {
+                        event.preventDefault(); // Prevent default navigation
+                        form.classList.add("active");
+                        document.body.classList.add("form-open");
+                    });
+                });
+
+                form.addEventListener("click", function(event) {
+                    if (event.target === form) {
+                        form.classList.remove("active");
+                        document.body.classList.remove("form-open");
+                    }
+                });
+            });
+
+
+            //For the Upload of image or pdf 
+
+            function previewFile(){
+                const file = document.getElementById("fileUpload").files[0];
+                const fileNameDiv = document.getElementById("fileName");
+                const errorMessageDiv = document.getElementById("errorMessage");
+
+                if(file){
+                        fileNameDiv.innerHTML = '${file.name} <span class="tick">✔</span>';
+                        document.querySelector(".tick").style.display = "inline";
+                    }else{
+                        fileNameDiv.innerHTML = '${file.name} <span class="error"><b>X</b></span>'
+                        document.querySelector(".tick").style.display = "inline";
+                        
+                    
+                    }
+                
+                
+                }   
+
+                //Icon button for mobile view
+                function toggleMenu(){
+                    document.querySelector(".middle").classList.toggle("show");
+                }
+                document.addEventListener("click", function(event){
+                    let menu = document.querySelector(".middle");
+                    let menuIcon = document.querySelector(".menu-icon");
+
+                    if(!menu.contains(event.target) && !menuIcon.contains(event.target)){
+                        menu.classList.remove("show");
+                    }
+                });
+
+                //clear Form
+
+                function clearForm(){
+                    document.getElementById("myform").reset();
+                };
+
+
+                function previewFile(inputElement) {
+                    const uploadTick = inputElement.parentElement.querySelector(".uploadTick");
+                    const uploadError = inputElement.parentElement.querySelector(".uploadError");
+                
+                    if (inputElement.files.length > 0) {
+                        uploadTick.style.display = "inline";
+                        uploadError.style.display = "none";
+                    } else {
+                        uploadTick.style.display = "none";
+                        uploadError.style.display = "inline";
+                    }
+                }
+
+                
+                document.getElementById("myform").addEventListener("submit", function(event)  {
+                    event.preventDefault(); // Prevent default form submission
+
+                    const directorCount = document.querySelectorAll('.directors').length;
+                        if (directorCount === 0) {
+                            showPopup("error", "Please add at least one director before submitting.");
+                            return; // Stop submission
+                        }
+                
+                        reindexDirectors(); // <- 🔥 fix to avoid skipped indexes
+                        
+                    const formData = new FormData(this);
+                
+                    fetch("submit_form.php", {
+                        method: "POST",
+                        body: formData
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        showPopup(data.status, data.message);
+                        document.getElementById("popup").dataset.status = data.status;
+                    })
+                    .catch(error => {
+                        showPopup("error", "An unexpected error occurred.");
+                    });
+                });
+              
+                function showPopup(status, message) {
+                    const popup = document.getElementById("popup");
+                    const title = document.getElementById("popupTitle");
+                    const msg = document.getElementById("popupMessage");
+                    const icon = document.getElementById("popupIcon");
+                
+                    if (status === "success") {
+                        title.textContent = "Thank You";
+                        icon.src = "/Images/tick.png"; // Success icon
+                    } else {
+                        title.textContent = "Oops!";
+                        icon.src = "/Images/error.png"; // Error icon (you should add this file)
+                    }
+                
+                    msg.textContent = message;
+                    popup.classList.add("open-popup");
+                }
+                
+                function closePopup() {
+                    const popup = document.getElementById("popup");
+                    popup.classList.remove("open-popup");
+                
+                    if (popup.dataset.status === "success") {
+                        window.location.href = "HomePage.html";
+                    }
+                }
+
+                function reindexDirectors() {
+                    const directorDivs = document.querySelectorAll('.directors');
+                    directorDivs.forEach((div, index) => {
+                        const inputs = div.querySelectorAll('input');
+                        inputs.forEach(input => {
+                            if (input.name.includes("directors")) {
+                                const fieldName = input.name.split("[").pop().split("]")[0]; // e.g., "name", "surname"
+                                input.name = `directors[${index}][${fieldName}]`;
+                            } else if (input.name.includes("director_files")) {
+                                input.name = `director_files[${index}]`;
+                            }
+                        });
+                    });
+                }
+                
+
+                window.addEventListener("scroll", function(){
+                    let elements = document.querySelectorAll(".footer");
+        
+                    elements.forEach(function(el){
+                        let position = el.getBoundingClientRect().top;
+                        let screenHeight = window.innerHeight;
+        
+                        if(position < screenHeight - 100){
+                            el.classList.add("active");
+                        }
+                    });
+                });
+        </script>
+        
+
+        
+      
+</body>
+</html>

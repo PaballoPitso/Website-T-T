@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./Contacts_Style.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu_open" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+</head>
+<body>
+    <div class="container">
+        <nav >
+            <div class="left">
+                <div class="logo">
+                    <a href="./HomePage.html">
+                        <img src="/Images/Tee&Tee.jpg" alt="Tee & Tee Logo">
+                    </a>
+                </div>
+                
+            </div>
+
+            
+            <div class="menu-icon" id="mobile-menu">&#9776;</div>
+            <ul class="middle-M" id="middle">
+                <li><a href="./Services.html">Services</a></li>
+                <li><a href="./Contacts.html">Contact Us</a></li>
+                <li><a href="./About.html">About Us</a></li>
+            </ul>
+           
+           
+        </nav>
+
+        <div class="contact-us" id="contact-us-section">
+            <h2>Contact Us</h2>
+            <div class="storytwo">
+                <p>We'd love to hear from you! Whether you have a question, feedback, or need
+                    assistance, our team is here to help.
+                </p>
+                <p><strong>Customer Support and  Business Inquiries</strong> For general inquiries or assistance with our services,business proposals please reach out to us via:</p>
+                <p><strong> Email:</strong> </p>
+                <a href="mailto:tankanep@telkomsa.net" class="email-link"><i class="fas fa-envelope"></i>tankanep@telkomsa.net</a>
+                <p><strong> Phone:</strong></p>
+                <a href="tel:+27744474203" class="contact-link phone-link">
+                    <i class="fas fa-phone"></i> +27 74 447 4203 </a>
+                
+                
+                <p><strong>Our Office</strong></p>
+                <p>
+                <ul>
+                <li> Address: 688 Hall Street,Masilo,Theunissen,9410,Free State,South Africa</li>
+                <li> Office Hours: Monday - Friday, 8:30 AM - 6:00 PM</li>
+                
+
+                </p>
+            <p><strong> Follow Us</strong> Stay connected with us for the latest updates on our Services and Prices</p>
+        <a
+            href="https://www.facebook.com/Tee & Tee Stationers and Copy Centre"
+            class="contact-link facebook-link"
+            target="_blank"
+        >
+            <i class="fab fa-facebook-f"></i> Tee & Tee Stationers and
+            Copy Centre
+        </a>
+                </ul>
+                <div class="social">
+                  <a href="https://www.facebook.com/Tee & Tee Stationers and Copy Centre"><i id="social-icon" class="uil uil-facebook"></i></a> 
+                <a href="https://wa.me/0744474203"><i id="social-icon" class="uil uil-whatsapp"></i></a>
+                <a href="https://tel:+27744474203"><i id="social-icon" class="uil uil-phone"></i></a>
+                 
+                </div>
+              <div class="admin">
+                <a href="admin/login.php" class="admin-btn">Admin Login</a>
+              </div>
+            </div>
+        </div>
+        <footer class="footer">
+        <ul class="footer-links">
+            <li><a href="./HomePage.html">Home</a></li>
+            <li><a href="./Services.html">Services</a></li>
+            <li><a href="./Contacts.html">Contact Us</a></li>
+            <li><a href="./About.html">About Us</a></li>
+        </ul>
+        <span class="copyright">
+                
+                <span id="copyright-text">© 2025 Tee & Tee. All rights reserved. Unauthorized use prohibited without prior written permission.</span>
+            </span>
+    </footer>
+    </div>
+    
+
+    <script>
+    //Icon button for mobile view
+    const menuToggle = document.getElementById('mobile-menu');
+    const middleM = document.getElementById('middle');
+
+menuToggle.addEventListener('click', () => {
+    middleM.classList.toggle('active');
+})
+
+window.addEventListener("scroll", function(){
+    let elements = document.querySelectorAll(".footer");
+
+    elements.forEach(function(el){
+        let position = el.getBoundingClientRect().top;
+        let screenHeight = window.innerHeight;
+
+        if(position < screenHeight - 100){
+            el.classList.add("active");
+        }
+    });
+});
+    </script>
+</body>
+</html>

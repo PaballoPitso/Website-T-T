@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Co-Operative Registration Form</title>
+    <link rel="stylesheet" href="./Quotation.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu_open" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="left">
+                <div class="logo">
+                    <a href="./HomePage.html">
+                        <img src="/Images/Tee&Tee.jpg" alt="Tee & Tee Logo">
+                    </a>
+                </div>
+            </div>
+         
+          
+        </nav>
+
+        <main>
+           <section class="CIPC">
+            <form action="submit_form.php" method="POST"  id="myform" enctype="multipart/form-data">
+                     
+     <div class="form">
+        <div>
+            <label for="name">Name/Company Name: <p>*</p></label>
+            <input type="text" id="name" name="name" required/>
+
+        </div>
+        <div>
+            <label for="subject">Select Subject: <p>*</p></label>
+                <select id="subject"  name="subject" required >
+                    <option value="">Select Service</option>
+                    <option value="Website">Quotation For Website</option>
+                    <option value="Poster">Quotation For Poster</option>
+                    <option value="Logo">Quotation For Logo</option>
+                    <option value="Logo">Other Designing Services </option>
+                </select>
+        </div>
+        
+        <div>
+     <label for="message">Message: <p>*</p></label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <input id="button" type="submit" value="Send Quote Request" />
+</div>
+       
+    
+        <footer class="footer">
+            <ul class="footer-links">
+                <li><a href="./HomePage.html">Home</a></li>
+                <li><a href="./Services.html">Services</a></li>
+                <li><a href="./Contacts.html">Contact Us</a></li>
+                <li><a href="./About.html">About Us</a></li>
+            </ul>
+            <span class="copyright">
+                    
+                    <span id="copyright-text">© 2025 Tee & Tee. All rights reserved. Unauthorized use prohibited without prior written permission.</span>
+                </span>
+        </footer>  
+
+     </div>
+                    
+       <script>
+        window.addEventListener("scroll", function(){
+            let elements = document.querySelectorAll(".footer");
+
+            elements.forEach(function(el){
+                let position = el.getBoundingClientRect().top;
+                let screenHeight = window.innerHeight;
+
+                if(position < screenHeight - 100){
+                    el.classList.add("active");
+                }
+            });
+        });
+       </script>                
+        
+
+        
+      
+</body>
+</html>
