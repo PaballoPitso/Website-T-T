@@ -1,87 +1,189 @@
 # Tee & Tee Stationery and Copy Centre Website
 
-## About the Project
+> A real-world web development project created for **Tee & Tee Stationery and Copy Centre**, designed to establish a professional online presence and provide customers with accessible information about the business and its services.
 
-The Tee & Tee Stationery and Copy Centre Website is a web-based project developed to create an online presence for Tee & Tee Stationery and Copy Centre.
+## 📌 Project Overview
 
-The website is designed to provide customers with information about the business, its services, and the products offered, while creating a professional and user-friendly online experience.
+The Tee & Tee Stationery and Copy Centre Website is a web-based application developed as a practical software development project.
 
-## Purpose
+The project focuses on designing and developing a professional, user-friendly website that represents the business online and provides customers with information about its services.
 
-The main purpose of this project is to:
+The website is currently **under active development**, with additional features, improvements, and refinements planned for future releases.
 
-* Create a professional website for Tee & Tee Stationery and Copy Centre
-* Provide information about the company's services
-* Improve the business's online presence
-* Make it easier for customers to learn about available services
-* Provide a foundation for future online features and improvements
+## 🎯 Project Objectives
 
-## Features
+The main objectives of the project are to:
 
-The website currently includes or is being developed to include:
+* Develop a professional online presence for Tee & Tee Stationery and Copy Centre.
+* Present the company's services in an organized and accessible manner.
+* Create a user-friendly interface for customers.
+* Apply practical web development skills to a real-world business requirement.
+* Develop a responsive experience for different screen sizes.
+* Establish a foundation for future digital services and functionality.
 
-* Home page
-* About section
-* Services section
-* Business information
-* Images and multimedia content
-* Responsive website design
-* Contact/customer information
-* Future improvements and additional functionality
+## ✨ Current Features
 
-## Technologies Used
+The project includes or is being developed with features such as:
 
-The project uses web development technologies including:
+* 🏠 Home page
+* ℹ️ About/business information
+* 🛠️ Services section
+* 🖼️ Business imagery and multimedia
+* 📱 Responsive web design
+* 📞 Customer contact information
+* 🌐 Business-focused website structure
+* 🔧 Ongoing UI and functionality improvements
 
-* HTML
-* CSS
+## 🛠️ Technologies & Tools
+
+### Frontend
+
+* HTML5
+* CSS3
 * JavaScript
+
+### Backend
+
 * PHP
 * MySQL
-* XAMPP
+
+### Development Tools
+
 * Visual Studio Code
+* XAMPP
+* Git
+* GitHub
 
-## Development Environment
+## 🏗️ Development Environment
 
-The website is currently being developed and tested locally using **XAMPP**.
+The project is currently developed and tested locally using **XAMPP**.
 
-The project is located inside the XAMPP web server directory:
+The project is placed inside the XAMPP web server directory:
 
 ```text
 C:\xampp\htdocs\Tee n Tee
 ```
 
-## Project Status
+The local development environment allows the website to be tested through an Apache/PHP server and, where applicable, a MySQL database.
 
-🚧 **Currently in Development**
+## 📂 Project Structure
 
-The website is not yet fully completed. This GitHub repository contains the current development version of the project and will be updated as new features and improvements are added.
+The project follows a web application structure containing resources such as:
 
-## Future Improvements
+```text
+Tee n Tee/
+│
+├── HTML/PHP pages
+├── CSS/
+├── JavaScript/
+├── Images/
+├── Media/
+├── Database resources
+└── README.md
+```
 
-Planned improvements may include:
+The exact structure may evolve as development continues.
 
-* Completing all website pages
-* Improving responsive design for mobile devices
-* Adding more interactive features
-* Improving website performance
-* Adding a functional contact system
-* Improving accessibility and usability
-* Adding additional business services and information
+## 🚀 Getting Started
+
+### Prerequisites
+
+To run the project locally, install:
+
+* XAMPP
+* A modern web browser
+* Visual Studio Code or another code editor
+* Git (optional, for version control)
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/PaballoPitso/Website-T-T.git
+```
+
+2. Move the project into the XAMPP `htdocs` directory:
+
+```text
+C:\xampp\htdocs\
+```
+
+3. Start **Apache** in XAMPP.
+
+4. Start **MySQL** if the current version of the project requires database functionality.
+
+5. Open the website through:
+
+```text
+http://localhost/Tee%20n%20Tee/
+```
+
+> The local URL may change depending on the project's final folder structure and configuration.
+
+## 🔐 Security
+
+Sensitive information should never be committed to this repository.
+
+This includes:
+
+* Passwords
+* API keys
+* Database credentials
+* Personal identification documents
+* Private configuration files
+* Other confidential information
+
+A `.gitignore` file should be maintained as the project develops to prevent sensitive or unnecessary files from being committed.
+
+## 📈 Future Development
+
+Planned improvements include:
+
+* Completing remaining website functionality
+* Improving responsive design
+* Enhancing the user interface
+* Improving website accessibility
+* Optimizing website performance
+* Expanding service information
+* Improving contact functionality
+* Strengthening database integration where required
+* Testing across different browsers and devices
 * Deploying the completed website online
 
-## Developer
+## 💡 Skills Demonstrated
+
+This project provides practical experience in:
+
+* Web development
+* Frontend development
+* Backend development
+* PHP development
+* Database integration
+* Responsive design
+* UI/UX improvement
+* Troubleshooting
+* Local server configuration
+* Git version control
+* GitHub repository management
+* Real-world client/business requirements
+
+## 👨‍💻 Developer
 
 **Paballo Pitso**
 
 Diploma in Information Technology
 
-This project forms part of my practical experience in web development, IT support, troubleshooting, and software development.
+This project demonstrates my practical application of information technology and web development skills through the development of a real-world business website.
 
-## Disclaimer
+## 📊 Project Status
 
-This project is currently under development. Features and content may change as development continues.
+**🚧 In Development**
 
----
+The project is actively being developed. The repository represents the current development version and will continue to receive improvements and new functionality.
 
-**© Tee & Tee Stationery and Copy Centre**
+## 📄 License
+
+This project is intended primarily as a portfolio and business website project.
+
+Copyright © Tee & Tee Stationery and Copy Centre.
